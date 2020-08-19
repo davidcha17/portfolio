@@ -7,7 +7,7 @@ const Footer = () => {
     const data = useStaticQuery(graphql`
         query {
             site {
-                siteMetaData {
+                siteMetadata {
                     author,
                     description
                 }
@@ -17,7 +17,7 @@ const Footer = () => {
 
     return (
         <footer className={footer.p} >
-            <p>Created by {data.site.siteMetaData.author} with Gatsby and React, © 2020</p>
+            <p>Created by {data.site.siteMetadata.author} with Gatsby and React, © 2020</p>
         </footer>
     )
 }

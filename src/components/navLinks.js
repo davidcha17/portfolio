@@ -7,7 +7,7 @@ const NavLink = () => {
     const data = useStaticQuery(graphql`
         query{
             site {
-                siteMetaData {
+                siteMetadata {
                     title,
                     titleTemplate,
                     author,
@@ -22,7 +22,7 @@ const NavLink = () => {
     return (
         <navlink className={navStyles.topBorder}>
                     <h1>
-                        <Link to="/" className={navStyles.title} >{data.site.siteMetaData.author}</Link>
+                        <Link to="/" className={navStyles.title} >{data.site.siteMetadata.author}</Link>
                     </h1>
             <nav>
                 <ul className={navStyles.bar}>
