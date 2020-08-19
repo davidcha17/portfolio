@@ -6,5 +6,22 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetaData: {
+    title: `David Cha's Portfolio`,
+    titleTemplate: "%s · Software Engineer",
+    author: `David Cha`,
+    description: `Software Engineer and Full-Stack Web Developer with a background in customer service and communication hoping to improve our lives`,
+    url: ``,
+    image: ``
+  },
+  plugins: [
+    'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet',
+    // {
+    // resolve: `gatsby-plugin-typography`,
+        // options: {
+            // pathToConfigModule: `src/utils/typography`,
+        // },
+    // }
+  ],
 }
