@@ -14,9 +14,18 @@ module.exports = {
     url: ``,
     image: ``
   },
+  // siteMetadata allows the application to be dynamic when you're scaling this S.P.A 
   plugins: [
     'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src', 
+        path: `${__dirname}/src/`
+      }
+    },
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark'
     // {
     // resolve: `gatsby-plugin-typography`,
         // options: {

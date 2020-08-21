@@ -22,4 +22,7 @@ const Footer = () => {
     )
 }
 
+// same concept as navLinks.js file
+// this file is a simple note to indicate who made it, how it was made.
+
 export default Footer 
