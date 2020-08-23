@@ -22,10 +22,12 @@ module.exports = {
       options: {
         name: 'src', 
         path: `${__dirname}/src/`
-      }
+        }
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
     // {
     // resolve: `gatsby-plugin-typography`,
         // options: {

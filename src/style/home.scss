@@ -1,9 +1,13 @@
-image {
-    background-image: url("/src/images/profile_picture/profile_pic1.jpeg");
+// .picture {
+    // }
+    
+    .background {
+    // background-image: url('../images/profile_picture/profile_pic1.jpeg');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+    background-size: auto;
     position: relative;
+    height: 0%
 }
 
 .image-text {
@@ -14,3 +18,4 @@ image {
     transform: translate(-50%, -50%);
     color: white;
   }
+
