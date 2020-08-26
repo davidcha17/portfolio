@@ -15,11 +15,12 @@ const Home = () => {
         <div 
           // className={HomeStyle.background}
         style={{
-          height: '90vh',
-          position: 'relative',
-          backgroundPosition: 'center',
+          height: '99vh',
+          // width: '120vh',
+          // backgroundAttachment: 'fixed',
+          backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: 'auto',
+          backgroundSize: 'cover',
           backgroundImage: `url(${withPrefix(ProfilePic)})`}}
         >
           <h1 className={HomeStyle.imageText} 
@@ -29,7 +30,7 @@ const Home = () => {
             left: '50%',
             position: 'absolute',
             transform: 'translate(-50%, -50%)',
-            color: '#F5FFFA'
+            textShadow: '3px 3px 3px grey'
           }}
           >
           I want to create things that'll improve our daily lives.</h1>

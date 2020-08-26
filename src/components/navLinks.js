@@ -22,12 +22,17 @@ const NavLinks = () => {
     // this project is scaling
 
     return (
-        <navlinks className={navStyles.topBorder}>
-                    <h1>
-                        <Link to="/" className={navStyles.title} >{data.site.siteMetadata.author}</Link>
-                    </h1>
+        <navlinks >
             <nav>
-                <ul className={navStyles.bar}>
+                <ul className={navStyles.sideNav}>
+                    <ol className={navStyles.topBorder}>
+                        <Link to="/" className={navStyles.title} >{data.site.siteMetadata.author}</Link>
+                        <p className={navStyles.p} >Full Stack Developer</p>
+                    </ol>
+                    <hr style={{
+                        boxShadow: '1px 2.5px 1px grey'
+                    }}
+                    />
                     <li>
                         <Link to="/about" className={navStyles.linkItem} activeClassName={navStyles.activeNavItem} >About</Link>
                     </li>
