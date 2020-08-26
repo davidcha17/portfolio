@@ -2,14 +2,13 @@ import React from 'react'
 
 import NavLinks from './navLinks'
 import Footer from './footer'
-// import '../style/index2.scss'
 import layoutStyles from './layout.module.scss'
 
 const Layout = ( { children }) => {
     return (
         <div className={layoutStyles.container} >
                 <NavLinks />
-                <div className={layoutStyles.content}>
+                <div className={layoutStyles.content} >
                     {children}
                 </div>
                 <Footer />

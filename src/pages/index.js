@@ -3,7 +3,8 @@ import { withPrefix } from 'gatsby'
 
 import Layout from '../components/layout'
 import Content from '../components/content'
-import HomeStyle from '../style/home.scss'
+// import HomeStyle from '../style/home.scss'
+// using scss doesnt work with backgroundimage 
 import ProfilePic from '../images/profile_picture/profile_pic1.jpeg'
 
 
@@ -23,7 +24,7 @@ const Home = () => {
           backgroundSize: 'cover',
           backgroundImage: `url(${withPrefix(ProfilePic)})`}}
         >
-          <h1 className={HomeStyle.imageText} 
+          <h1  
           style={{
             textAlign: 'center',
             top: '10%',
