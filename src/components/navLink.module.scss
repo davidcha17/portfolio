@@ -1,5 +1,5 @@
 .top-border {
-    padding: 4.5rem 65px .5rem 60px;
+    padding: 0 0 0 30px;
 }
 
 .title {
@@ -8,7 +8,7 @@
     text-align: center;
     position: relative;
     padding-top: 20px;
-    font-size: 3rem;
+    font-size: 2.15rem;
 }
 
 .p {
@@ -25,17 +25,18 @@
     width: 285px;
     position: fixed;
     z-index: 1;
-    top: -65px;
+    top: 0;
     left: -40px;
     background-color: whitesmoke;
     overflow-x: hidden;
     padding-top: 20px;
     margin-bottom: 0; 
     padding-bottom: 0;
+    box-shadow: 3px 2.5px 3px grey;
 }
 
 .side-nav li {
-    padding: 2rem 0 5px 45px;
+    padding: 1rem 0 10px 55px;
     display: block;
 }
 
