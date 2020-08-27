@@ -2,16 +2,31 @@ import React from 'react'
 
 import NavLinks from './navLinks'
 import Footer from './footer'
+<<<<<<< HEAD
+=======
+
+>>>>>>> container-test
 import layoutStyles from './layout.module.scss'
 
 const Layout = ( { children }) => {
     return (
-        <div className={layoutStyles.container} >
+        <div  className={layoutStyles.mainContainer} >
+        {/* change this to main container */}
+            <div className={layoutStyles.sideBar} >
                 <NavLinks />
+<<<<<<< HEAD
                 <div className={layoutStyles.content} >
+=======
+            </div>
+            {/* sidebar container */}
+                <div className={layoutStyles.mainContent} >
+>>>>>>> container-test
                     {children}
+                    {/* main content container */}
+                    <div className={layoutStyles.footer} >
+                        <Footer />
+                    </div>
                 </div>
-                <Footer />
         </div>
     )
 }

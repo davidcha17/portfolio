@@ -21,17 +21,17 @@
 }
 
 .side-nav {
-    height: 100%;
-    width: 285px;
-    position: fixed;
+    // height: 100%;
+    // width: 300px;
+    position: left;
     z-index: 1;
     top: 0;
-    left: -40px;
-    background-color: whitesmoke;
-    overflow-x: hidden;
-    padding-top: 20px;
-    margin-bottom: 0; 
-    padding-bottom: 0;
+    left: 10px;
+    // background-color: whitesmoke;
+    // overflow-x: hidden;
+    // padding-top: 20px;
+    // margin-bottom: 0; 
+    // padding-bottom: 0;
     box-shadow: 3px 2.5px 3px grey;
 }
 
@@ -47,7 +47,7 @@
     color: #666666;
 }
 
-.link-item:hover {
+.link-item :hover {
     color: #488888;
 }
 

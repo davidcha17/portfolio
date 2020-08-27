@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import navStyles from './navLink.module.scss'
+// import navStyles from './navLink.module.scss'
 
 const NavLinks = () => {
 
@@ -24,26 +24,28 @@ const NavLinks = () => {
     return (
         <navlinks >
             <nav>
-                <ul className={navStyles.sideNav}>
-                    <ol className={navStyles.topBorder}>
-                        <Link to="/" className={navStyles.title} >{data.site.siteMetadata.author}</Link>
-                        <p className={navStyles.p} >Full Stack Developer</p>
+                <ul style={{
+                    margin: '0 auto',
+                    listStyleType: 'none'
+                }}
+                >
+                    <ol>
+                        <Link to="/" style={{ color: '#196B76' }} >{data.site.siteMetadata.author}</Link>
+                        <p>Full Stack Developer</p>
                     </ol>
-                    <hr style={{
-                        boxShadow: '1px 2.5px 1px grey'
-                    }}
+                    <hr style={{ boxShadow: '1px 2.5px 1px grey' }}
                     />
                     <li>
-                        <Link to="/about" className={navStyles.linkItem} activeClassName={navStyles.activeNavItem} >About</Link>
+                        <Link to="/about" >About</Link>
                     </li>
                     <li>
-                        <Link to="/contacts" className={navStyles.linkItem} activeClassName={navStyles.activeNavItem} >Contact</Link>
+                        <Link to="/contacts" >Contact</Link>
                     </li>
                     <li>
-                        <Link to="/resume" className={navStyles.linkItem} activeClassName={navStyles.activeNavItem} >Resume</Link>
+                        <Link to="/resume" >Resume</Link>
                     </li>
                     <li>
-                        <Link to="/projects" className={navStyles.linkItem} activeClassName={navStyles.activeNavItem} >Projects</Link>
+                        <Link to="/projects" >Projects</Link>
                     </li>
                 </ul>
             </nav>
