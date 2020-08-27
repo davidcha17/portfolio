@@ -1,6 +1,5 @@
 import React from "react"
 
-import Content from '../components/content'
 import Layout from '../components/layout'
 import aboutStyles from '../components/about.module.scss'
 
@@ -9,7 +8,6 @@ import ProfilePic from '../images/profile_picture/profile_pic2.jpeg'
 const About = () => {
   return (    
     <Layout>
-      <Content>
         <h1 className={aboutStyles.title}>Hello World</h1>
         <img className={aboutStyles.picture} src={ProfilePic} alt="profile pic" />
         <div className={aboutStyles.aboutDescription} >
@@ -28,7 +26,6 @@ const About = () => {
           </p>
           
         </div>
-      </Content>
     </Layout>
   )
 }

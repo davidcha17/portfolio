@@ -1,25 +1,81 @@
-.container {
-    margin: auto;
-    max-width: 1000px;
-    padding: 1rem;
-
-    justify-content: center;
-    display: flex;
-    // flex-direction: column;
-    min-height: 100vh;
+.main-container {
+  display: flex;
+  // flex-flow: row wrap;
+  min-height: 100vh;
 }
 
-.content {
-    flex-grow: 1;
-    flex-basis: 0;
-    min-width: 20%;    
+.side-bar {
+  flex: 0 0 350px;    
+  background-color: whitesmoke;
+  box-shadow: 3px 2.5px 3px grey;
+  padding-top: 50px;
+  overflow-x: hidden;
+  z-index: 1;
 }
 
-.left {
-    width: 25%;
+.side-bar ol {
+  padding: 0 0 0 35px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 2.15rem;
 }
 
-.right {
-    width: 75%;
-    text-align: center;
+.side-bar p {
+  color: #b43434;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  font-size: 1.15rem;
 }
+
+.side-bar li {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0 10px 65px;
+}
+
+.main-content {
+  flex: 1;
+  // flex-shrink: 1;
+  flex-basis: 0%;
+  text-align: center;
+  padding: 50px 200px 50px 200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: whitesmoke;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer div { 
+  margin: auto;
+  border-top: 1px solid #F0FFF0; 
+  box-shadow: 0px -1px 5px #FFDEAD;
+}
+
+.footer h6 {
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+
+// flexbox example
+
+@media all and (max-width: 800px) {
+  .main-container {
+    justify-content: space-around;
+  }
+}
+  
+  @media all and (max-width: 600px) {
+    .main-container {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  }

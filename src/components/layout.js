@@ -6,12 +6,19 @@ import layoutStyles from './layout.module.scss'
 
 const Layout = ( { children }) => {
     return (
-        <div className={layoutStyles.container} >
+        <div  className={layoutStyles.mainContainer} >
+        {/* change this to main container */}
+            <div className={layoutStyles.sideBar} >
                 <NavLinks />
-                <div className={layoutStyles.content} >
+            </div>
+            {/* sidebar container */}
+                <div className={layoutStyles.mainContent} >
                     {children}
+                    {/* main content container */}
+                    <div className={layoutStyles.footer} >
+                        <Footer />
+                    </div>
                 </div>
-                <Footer />
         </div>
     )
 }
