@@ -2,13 +2,7 @@ import React from "react"
 import { withPrefix } from 'gatsby'
 
 import Layout from '../components/layout'
-<<<<<<< HEAD
-import Content from '../components/content'
-// import HomeStyle from '../style/home.scss'
-// using scss doesnt work with backgroundimage 
-=======
 import HomeStyle from '../style/home.scss'
->>>>>>> container-test
 import ProfilePic from '../images/profile_picture/profile_pic1.jpeg'
 
 
