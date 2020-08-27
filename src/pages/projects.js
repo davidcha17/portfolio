@@ -1,7 +1,6 @@
 import React from "react"
 
 import Layout from '../components/layout'
-import Content from '../components/content'
 import Style from '../components/project.module.scss'
 
 import YAMS from '../../static/YAMS.png'
@@ -10,7 +9,6 @@ import Station from '../../static/Station.png'
 const Project = () => {
   return (
     <Layout>
-      {/* <Content> */}
         <h1>Portfolio Site</h1>
         <h1>input image of portfolio</h1>
         <h3 className={Style.projectLink} ><strong>github: <a href="https://github.com/davidcha17/portfolio" target="_blank" rel="noreferrer">Portfolio</a></strong></h3>
@@ -96,7 +94,6 @@ const Project = () => {
 
         </div>
 
-      {/* </Content> */}
     </Layout>
   )
 }

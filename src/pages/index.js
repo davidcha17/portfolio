@@ -2,7 +2,6 @@ import React from "react"
 import { withPrefix } from 'gatsby'
 
 import Layout from '../components/layout'
-import Content from '../components/content'
 import HomeStyle from '../style/home.scss'
 import ProfilePic from '../images/profile_picture/profile_pic1.jpeg'
 
@@ -11,7 +10,6 @@ import ProfilePic from '../images/profile_picture/profile_pic1.jpeg'
 const Home = () => {
   return (
     <Layout>
-      {/* <Content> */}
         <div 
           // className={HomeStyle.background}
         style={{
@@ -35,7 +33,6 @@ const Home = () => {
           >
           I want to create things that'll improve our daily lives.</h1>
         </div>
-     {/* </Content> */}
     </Layout>
   )
 }
