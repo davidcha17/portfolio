@@ -1,12 +1,14 @@
-.container {
-    margin: auto;
-    max-width: 1000px;
-    padding: 1rem;
+.main-container {
+    // // margin-left: 700px;
+    // // margin-right: 50px;
+    // // margin: auto;
+    // max-width: 1000px;
+    // padding: 1rem;
 
-    justify-content: center;
+    // justify-content: center;
     display: flex;
     // flex-direction: column;
-    min-height: 100vh;
+    // // min-height: 100vh;
 }
 
 .content {
@@ -14,3 +16,47 @@
     flex-basis: 0;
     min-width: 20%;    
 }
+
+// flexbox example
+.side-bar-nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    
+    list-style: none;
+    margin: 0; 
+    background: white;
+  }
+  
+  .side-bar-nav li {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+//   .side-bar-nav li:hover {
+//     background: #488888;
+//   }
+  
+  @media all and (max-width: 800px) {
+    .side-bar-nav {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .side-bar-nav {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .side-bar-nav li { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .side-bar-nav li:last-of-type a {
+      border-bottom: none;
+    }
+  }

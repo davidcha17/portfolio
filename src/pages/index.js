@@ -11,7 +11,7 @@ import ProfilePic from '../images/profile_picture/profile_pic1.jpeg'
 const Home = () => {
   return (
     <Layout>
-      <Content>
+      {/* <Content> */}
         <div 
           // className={HomeStyle.background}
         style={{
@@ -35,7 +35,7 @@ const Home = () => {
           >
           I want to create things that'll improve our daily lives.</h1>
         </div>
-     </Content>
+     {/* </Content> */}
     </Layout>
   )
 }

@@ -6,13 +6,13 @@ import Content from '../components/content'
 const Contact = () => {
   return (
     <Layout>
-      <Content>
+      {/* <Content> */}
         <h1>Contact Information</h1>
         <p>Github: davidcha17@github.com</p>
         <p>Medium: https://medium.com/@littlesadtea</p>
         <p>Email: david.cha225@gmail.com</p>
         <p>LinkedIn: https://www.linkedin.com/in/david-taehyun-cha/</p>
-      </Content>
+      {/* </Content> */}
     </Layout>
   )
 }
