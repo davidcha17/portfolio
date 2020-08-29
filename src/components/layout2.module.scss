@@ -1,0 +1,48 @@
+.body {
+    background: whitesmoke;
+    margin: 0;
+    margin-left: 250px
+}
+
+.main-content {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.side-bar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: grey;
+    top: 0;
+    left: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-bar p {
+    text-align: center;
+}
+
+.side-bar ul {
+    padding-inline-start: 0;
+}
+
+.side-bar li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+    .side-bar {
+        width: 100vw
+    }
+    .side-bar li {
+        text-align: center;
+    }
+}
