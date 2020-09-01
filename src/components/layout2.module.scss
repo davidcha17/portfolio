@@ -11,11 +11,23 @@
     text-align: center;
 }
 
+.hamburger-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: none;
+    z-index: 10;
+}
+
+.hamburger-btn:hover {
+    cursor: pointer;
+}
+
 .side-bar {
     width: 250px;
     height: 100vh;
     position: fixed;
-    background-color: grey;
+    background-color: whitesmoke;
     top: 0;
     left: 0;
     padding: 30px 20px;
@@ -39,10 +51,25 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .side-bar {
-        width: 100vw
+
+    .body {
+        margin-left: 0;
     }
+
+    .side-bar {
+        width: 100vw;
+        transform: translateX(-1000px);
+        transition: transform 500ms;
+    }
+    
+    .side-bar.span {
+        transform: translateX(0)
+    }
+
     .side-bar li {
         text-align: center;
+    }
+    .hamburger-btn {
+        display: inline-block;
     }
 }

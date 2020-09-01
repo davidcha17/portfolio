@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 // import navStyles from './navLink.module.scss'
+// import layoutStyle2 from './layout2.module.scss'
 
 const NavLinks = () => {
 

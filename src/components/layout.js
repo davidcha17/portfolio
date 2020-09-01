@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-// import NavLinks from './navLinks'
-// import Footer from './footer'
+import NavLinks from './navLinks'
+import Footer from './footer'
 // import layoutStyles from './layout.module.scss'
 import layoutStyles2 from './layout2.module.scss'
 
+
+
+// const clickedButton = () => {
+//     console.log("clicked")
+//     this.setState({
+//         isHidden: true
+//     })
+
+// }
+
 const Layout = ( { children }) => {
+
+    const [isHidden, setHidden] = useState(false)
+
     return (
         // <div  className={layoutStyles.mainContainer} >
         // {/* change this to main container */}
@@ -26,21 +39,23 @@ const Layout = ( { children }) => {
         <div className={layoutStyles2.body} >
             <div className={layoutStyles2.mainContent} >
                 <h1>
-                    Main Container will hold main content
+                    Main Content Holding data
                 </h1>
+                    {children}
             </div>
-            <div className={layoutStyles2.sideBar} >
-                <p>Side bar</p> 
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Content</li>
-                    <li>Contact</li>
-                </ul>
-                <div>
-                    Footer
+                <span className={layoutStyles2.hamburgerBtn} > 
+                    { isHidden ? (
+                        <span onClick={() => {setHidden(true)}}> &#9776; </span> 
+                    ) : (
+                        <span onClick={() => {setHidden(false)}}>  &#9776; </span>
+                    )}  
+                </span>
+                <div className={layoutStyles2.sideBar} >
+                    <NavLinks />
+                    <div>
+                        <Footer />
+                    </div>
                 </div>
-            </div>
         </div>
         // this part will contain a responsive sidebar and a hidden button
     )
@@ -50,3 +65,22 @@ const Layout = ( { children }) => {
 // In every other page component, it'll be wrapped by this layout component to make it more attractive and organized 
 
 export default Layout 
+
+{/* <div class="container">
+  <h1>Pop In Side Menu in JavaScript</h1>
+  <div id="hamburgerBtn">&#9776</div>
+  <nav id="sideMenu">
+    <div class="nav-brand">
+      <p><a href="https://www.jamesqquick.com/">James <strong>Q</strong> Quick</a></p>
+      <img src="https://www.jamesqquick.com/static/d187c1eb5585719ae69edb59c8ae4dc2/1e576/headshot-512.png"/>
+    </div>
+    <ul class="nav-items">
+      <li>Home</li>
+      <li>About</li>
+      <li>Courses</li>
+    </ul>
+    <div class="footer">      <p>james<strong>q</strong>quick</p>
+    </div>
+  </nav>
+  
+</div> */}
