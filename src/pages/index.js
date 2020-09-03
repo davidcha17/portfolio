@@ -4,6 +4,7 @@ import { withPrefix } from 'gatsby'
 import Layout from '../components/layout'
 // import HomeStyle from '../style/home.scss'
 import ProfilePic from '../images/profile_picture/profile_pic1.jpeg'
+import ProfilePic2 from '../images/profile_picture/pic11.jpeg'
 
 
 
@@ -19,7 +20,7 @@ const Home = () => {
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          backgroundImage: `url(${withPrefix(ProfilePic)})`}}
+          backgroundImage: `url(${withPrefix(ProfilePic2)})`}}
         >
           <h1  
           style={{

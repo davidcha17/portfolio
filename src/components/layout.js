@@ -38,9 +38,6 @@ const Layout = ( { children }) => {
 
         <div className={layoutStyles2.body} >
             <div className={layoutStyles2.mainContent} >
-                <h1>
-                    Main Content Holding data
-                </h1>
                     {children}
             </div>
                 <span className={layoutStyles2.hamburgerBtn} > 
