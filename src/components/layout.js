@@ -10,15 +10,17 @@ import layoutStyles2 from './layout2.module.scss'
 // const clickedButton = () => {
 //     console.log("clicked")
 //     this.setState({
-//         isHidden: true
+//         open: true
 //     })
 
 // }
 
 const Layout = ( { children }) => {
 
-    const [isHidden, setHidden] = useState(false)
-
+    const [open, setOpen] = useState(false)
+    const button = '&#9776;'
+    
+    console.log(open)
     return (
         // <div  className={layoutStyles.mainContainer} >
         // {/* change this to main container */}
@@ -35,7 +37,7 @@ const Layout = ( { children }) => {
         //             </div>
         // </div>
         // this is the previous layout with flexbox
-
+        
         <div className={layoutStyles2.body} >
             <div className={layoutStyles2.mainContent} >
                 <h1>
@@ -43,19 +45,36 @@ const Layout = ( { children }) => {
                 </h1>
                     {children}
             </div>
-                <span className={layoutStyles2.hamburgerBtn} > 
-                    { isHidden ? (
-                        <span onClick={() => {setHidden(true)}}> &#9776; </span> 
-                    ) : (
-                        <span onClick={() => {setHidden(false)}}>  &#9776; </span>
-                    )}  
+                <span 
+                open={open}
+                onClick={ () => { setOpen(!open) }} 
+                className={layoutStyles2.hamburgerBtn}
+                > 
+                    {open ? 'X' : button}
                 </span>
-                <div className={layoutStyles2.sideBar} >
+
+                {
+                    open ? (
+                        <div className={layoutStyles2.sideBar} >
+                                <NavLinks />
+                                <div>
+                                    <Footer />
+                                </div>
+                        </div> 
+                    ) : (
+                        <div open className={layoutStyles2.sideBar} >
+                                <NavLinks />
+                                <div>
+                                    <Footer />
+                                </div>
+                        </div> 
+                )}
+                {/* <div className={ open === false ? layoutStyles2.sideBar : '&#9776;'} >
                     <NavLinks />
                     <div>
                         <Footer />
                     </div>
-                </div>
+                </div> */}
         </div>
         // this part will contain a responsive sidebar and a hidden button
     )
@@ -63,24 +82,30 @@ const Layout = ( { children }) => {
 }
 // this file shows the structure of the component tree, it is imported to every page and the children is the data within the pages. 
 // In every other page component, it'll be wrapped by this layout component to make it more attractive and organized 
-
+ 
 export default Layout 
 
-{/* <div class="container">
-  <h1>Pop In Side Menu in JavaScript</h1>
-  <div id="hamburgerBtn">&#9776</div>
-  <nav id="sideMenu">
-    <div class="nav-brand">
-      <p><a href="https://www.jamesqquick.com/">James <strong>Q</strong> Quick</a></p>
-      <img src="https://www.jamesqquick.com/static/d187c1eb5585719ae69edb59c8ae4dc2/1e576/headshot-512.png"/>
-    </div>
-    <ul class="nav-items">
-      <li>Home</li>
-      <li>About</li>
-      <li>Courses</li>
-    </ul>
-    <div class="footer">      <p>james<strong>q</strong>quick</p>
-    </div>
-  </nav>
-  
-</div> */}
+// return (
+
+    // <Navigation>
+      
+    //   <Logo />
+      
+    //   <Toggle
+    //     navbarOpen={navbarOpen}
+    //     onClick={() => setNavbarOpen(!navbarOpen)}
+    //     >
+    //             {navbarOpen ? <Hamburger open /> : <Hamburger />}
+    //   </Toggle>
+    //   {navbarOpen ? (
+    //                     <Navbox>
+    //                     <NavbarLinks />
+    //                     </Navbox>
+    //                 ) : (
+    //                     <Navbox open>
+    //                     <NavbarLinks />
+    //                     </Navbox>
+    //   )}
+    // </Navigation>
+//   )
+// }

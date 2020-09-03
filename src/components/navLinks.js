@@ -23,7 +23,7 @@ const NavLinks = () => {
     // this project is scaling
 
     return (
-        <navlinks >
+        <>
             <nav>
                 <ul style={{
                     margin: '0 auto',
@@ -50,7 +50,7 @@ const NavLinks = () => {
                     </li>
                 </ul>
             </nav>
-        </navlinks>
+        </>
     )
 }
 // By importing navStyles from the navLink.module.scss we become more organinzed in trying to style the elements

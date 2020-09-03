@@ -50,7 +50,7 @@
     text-align: left;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 
     .body {
         margin-left: 0;
@@ -58,8 +58,9 @@
 
     .side-bar {
         width: 100vw;
+        // position: sticky;
         transform: translateX(-1000px);
-        transition: transform 500ms;
+        transition: transform 5000ms;
     }
     
     .side-bar.span {
