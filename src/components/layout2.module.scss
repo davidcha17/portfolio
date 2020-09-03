@@ -59,9 +59,14 @@
     .side-bar {
         width: 100vw;
         // position: sticky;
-        transform: translateX(-1000px);
+        transform: translateX(-100%);
         transition: transform 5000ms;
     }
+
+    .side-bar.open {
+        transform: translateX(0);
+    }
+
     
     .side-bar.span {
         transform: translateX(0)

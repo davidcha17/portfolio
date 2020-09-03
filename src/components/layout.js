@@ -40,9 +40,6 @@ const Layout = ( { children }) => {
         
         <div className={layoutStyles2.body} >
             <div className={layoutStyles2.mainContent} >
-                <h1>
-                    Main Content Holding data
-                </h1>
                     {children}
             </div>
                 <span 
@@ -50,7 +47,7 @@ const Layout = ( { children }) => {
                 onClick={ () => { setOpen(!open) }} 
                 className={layoutStyles2.hamburgerBtn}
                 > 
-                    {open ? 'X' : button}
+                    {open ? 'X' : button }
                 </span>
 
                 {
@@ -62,7 +59,7 @@ const Layout = ( { children }) => {
                                 </div>
                         </div> 
                     ) : (
-                        <div open className={layoutStyles2.sideBar} >
+                        <div open className={layoutStyles2.sideBar.open} >
                                 <NavLinks />
                                 <div>
                                     <Footer />
