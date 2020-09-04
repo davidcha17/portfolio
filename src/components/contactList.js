@@ -44,10 +44,10 @@ export default function ContactList() {
 
     <ul className={styles.brandList}>
 
-      <li>{LinkedInLink()}</li>
-      <li>{GitHubLink()}</li>
-      <li>{MediumLink()}</li>
       <li>{DevToLink()}</li>
+      <li>{GitHubLink()}</li>
+      <li>{LinkedInLink()}</li>
+      <li>{MediumLink()}</li>
 
     </ul>
 
