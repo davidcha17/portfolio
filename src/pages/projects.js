@@ -13,13 +13,13 @@ const Project = () => {
         <h1>Portfolio Site</h1>
         <img className={style.projectImage} src={Portfolio} alt="scrren shot of portfolio" />
         <h3 className={style.projectLink} ><strong>github: <a href="https://github.com/davidcha17/portfolio" target="_blank" rel="noreferrer">Portfolio</a></strong></h3>
-        <p><strong>Hosted: <a href="https://davidcha.netlify.app/" target="_blank" rel="noreferrer">https://davidcha.netlify.app//</a></strong></p>
+        <p><strong>Hoisted: <a href="https://davidcha.netlify.app/" target="_blank" rel="noreferrer">https://davidcha.netlify.app//</a></strong></p>
 
         <div className={style.description} >
 
           <p>This project is an ongoing project. It has given me the opportunity to understand CSS styling and the endless possibilities that
           a developer can achieve. While trying to achieve those possibilities, I usually end up with a lot of hardships. Those hardships include
-          trying to decipher the weird behaviors occuring, adding more content, and organizing the structure. This is an ongoing project and 
+          trying to decipher the weird behaviors occurring, adding more content, and organizing the structure. This is an ongoing project and 
           I will eventually clear these hardships. I am going to enjoy this process while improving the application. 
           This project was provided by <strong><a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a></strong>, a
           blazing fast modern site generator for React.</p>
