@@ -11,28 +11,28 @@ import styles from '../components/contactList.module.scss'
 const LinkedInLink = () => {
   return (
     <a href="https://www.linkedin.com/in/david-taehyun-cha/" target="_blank" rel="noreferrer">
-      <img src={LinkedInMark} alt="LinkedIn Logo" className={styles.brandImg} />
+      <img className={styles.brandImg} src={LinkedInMark} alt="LinkedIn Logo"  />
     </a>
   )
 }
 const GitHubLink = () => {
   return (
     <a href="davidcha17@github.com" target="_blank" rel="noreferrer">
-      <img src={GitHubMark} alt="GitHub Logo" className={styles.brandImg} />
+      <img className={styles.brandImg} src={GitHubMark} alt="GitHub Logo"  />
     </a>
   )
 }
 const MediumLink = () => {
   return (
     <a href="https://medium.com/@littlesadtea" target="_blank" rel="noreferrer">
-      <img src={MediumMark} alt="Medium Logo" className={styles.brandImg} />
+      <img className={styles.brandImg} src={MediumMark} alt="Medium Logo"  />
     </a>
   )
 }
 const DevToLink = () => {
   return (
     <a href="https://dev.to/davidcha17" target="_blank" rel="noreferrer">
-      <img src={DevToMark} alt="Dev.to Logo" className={styles.brandImg} />
+      <img className={styles.brandImg} src={DevToMark} alt="Dev.to Logo"  />
     </a>
   )
 }
