@@ -3,8 +3,7 @@ import { withPrefix } from 'gatsby'
 
 import Layout from '../components/layout'
 // import HomeStyle from '../style/home.scss'
-// import ProfilePic from '../images/profile_picture/profile_pic1.jpeg'
-import ProfilePic2 from '../images/profile_picture/pic11.jpeg'
+import ProfilePic from '../images/profile_picture/pic11.jpeg'
 
 
 
@@ -14,13 +13,13 @@ const Home = () => {
         <div 
           // className={HomeStyle.background}
         style={{
-          height: '99vh',
+          height: '150vh',
           // width: '120vh',
           // backgroundAttachment: 'fixed',
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          backgroundImage: `url(${withPrefix(ProfilePic2)})`}}
+          backgroundImage: `url(${withPrefix(ProfilePic)})`}}
         >
           <h1  
           style={{
@@ -32,7 +31,7 @@ const Home = () => {
             textShadow: '3px 3px 3px grey'
           }}
           >
-          I want to create things that'll improve daily lives.</h1>
+          I want to create things that'll improve our daily lives.</h1>
         </div>
     </Layout>
   )

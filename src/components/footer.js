@@ -15,11 +15,9 @@ const Footer = () => {
     `)
 
     return (
-        <footer>
-            <div>
-                <h6>Created by {data.site.siteMetadata.author} with Gatsby and React, © 2020</h6>
-            </div>
-        </footer>
+        <>
+            <h6>Created by {data.site.siteMetadata.author} with Gatsby and React, © 2020</h6>
+        </>
     )
 }
 
