@@ -32,7 +32,7 @@ const Home = () => {
             textShadow: '3px 3px 3px grey'
           }}
           >
-          I want to create commodities that'll improve daily lives.</h1>
+          I want to create material that'll improve daily lives.</h1>
         </div>
     </Layout>
   )
