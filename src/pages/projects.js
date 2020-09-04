@@ -13,7 +13,7 @@ const Project = () => {
         <h1>Portfolio Site</h1>
         <img className={style.projectImage} src={Portfolio} alt="scrren shot of portfolio" />
         <h3 className={style.projectLink} ><strong>github: <a href="https://github.com/davidcha17/portfolio" target="_blank" rel="noreferrer">Portfolio</a></strong></h3>
-        <h4>Hosted: Has not been hoisted yet</h4>
+        <p><strong>Hosted: <a href="https://davidcha.netlify.app/" target="_blank" rel="noreferrer">https://davidcha.netlify.app//</a></strong></p>
 
         <div className={style.description} >
 
