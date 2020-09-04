@@ -17,8 +17,11 @@ const Project = () => {
 
         <div className={style.description} >
 
-          <p>This project is an ongoing project. This project has given me the opportunity to understand CSS styling and the endless possibilites that
-          a developer can achieve. This project was provided by <strong><a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a></strong>, a
+          <p>This project is an ongoing project. It has given me the opportunity to understand CSS styling and the endless possibilities that
+          a developer can achieve. While trying to achieve those possibilities, I usually end up with a lot of hardships. Those hardships include
+          trying to decipher the weird behaviors occuring, adding more content, and organizing the structure. This is an ongoing project and 
+          I will eventually clear these hardships. I am going to enjoy this process while improving the application. 
+          This project was provided by <strong><a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a></strong>, a
           blazing fast modern site generator for React.</p>
 
         </div>
