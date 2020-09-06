@@ -47,13 +47,21 @@ const Project = () => {
           <p><strong>Y.A.M.S</strong> was created because of uncertain times, this project's primary purpose was to pinpoint 
           available restaurants around a certain location. This would allow the user to interact with his/her area and getting to 
           know where they can get a luscious meal.</p>
+          <p>It was the final project I was able to produce during my time at Flatiron and I am proud to state that I was able to build this application. 
+          While building this app, I encountered a few challenges such as managing two APIs and managing the delete functionality between the user and an instance object (restaurant)
+          from the user's list. I was able to tackle the API challenge by using a tool to help render the data without writing code. From my experience with Postman, it's 
+          a great tool to use to help indicate the type of data you would receieve from an API. I was also able to tackle the delete functionality 
+          by combining the state of the user and the list instead of deleting the instance object from just the user's list. This was due to the association I had in my backend; 
+          a user has many restaurants through a list. I also used active model serializer to associate the models. Due to that, if I change one thing from one model
+          I would have to make a similar change in the other model. I really had fun with this project and there is more room for improvement. I will definitely come 
+          back to it.</p>
 
           <p>This project utilized two API sources: <strong>Mapbox and Yelp Fusion.</strong> This project hasn't been deployed yet and 
           you are required to acquire your own API keys for both sources. <strong><a href="https://www.yelp.com/developers/v3/manage_app" target="_blank" rel="noreferrer">Sign-up for Fusion Yelp</a></strong> and <strong><a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noreferrer">Sign-up for Mapbox</a></strong> </p>
 
           <p>Before you become a user, you must input the necessary API keys into a .env file. As a user, you are allowed to input a location from the backend provided by <strong>Ruby on Rails</strong> After inputting 
-          the location, you must rails db:seed in order to retrieve any data from the Fusion Yelp's database. You are also allowed to make an account due to <strong>AUTH</strong>. Once all the necessary information is provide 
-          the user can now check the surrounding area for available restaurants. You are also able to save a restaurant's information into a list to look back at it for future purposes.</p>
+          the location, you must rails db:seed in order to retrieve any data from the Fusion Yelp's database. You are also allowed to make an account due to <strong>AUTH</strong>. Once all the necessary information is provided 
+          the user can now check the surrounding area for available restaurants. You are also able to save a restaurant's information into a list so that they may be able to have a history.</p>
 
         </div>
         <div className={style.tools} >
