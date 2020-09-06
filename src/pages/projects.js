@@ -56,7 +56,7 @@ const Project = () => {
           I would have to make a similar change in the other model. I really had fun with this project and there is more room for improvement. I will definitely come 
           back to it.</p>
 
-          <p>This project utilized two API sources: <strong>Mapbox and Yelp Fusion.</strong> This project hasn't been deployed yet and 
+          <p>This project utilized two API sources: <strong>Mapbox and Yelp Fusion.</strong> It hasn't been deployed yet and 
           you are required to acquire your own API keys for both sources. <strong><a href="https://www.yelp.com/developers/v3/manage_app" target="_blank" rel="noreferrer">Sign-up for Fusion Yelp</a></strong> and <strong><a href="https://account.mapbox.com/auth/signup/" target="_blank" rel="noreferrer">Sign-up for Mapbox</a></strong> </p>
 
           <p>Before you become a user, you must input the necessary API keys into a .env file. As a user, you are allowed to input a location from the backend provided by <strong>Ruby on Rails</strong> After inputting 
