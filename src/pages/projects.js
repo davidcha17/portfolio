@@ -6,12 +6,46 @@ import style from '../components/project.module.scss'
 import YAMS from '../../static/YAMS.png'
 import Station from '../../static/Station.png'
 import Portfolio from '../../static/Portfolio.png'
+import Tracker from '../../static/Tracker.png'
 
 const Project = () => {
   return (
     <Layout>
+        <h1>Shop Tracker</h1>
+        <img className={style.projectImage} src={Tracker} alt="screen shot of Tracker List" />
+        <h3 className={style.projectLink} ><strong>github: <a href="https://github.com/davidcha17/Store-Tracker" target="_blank" rel="noreferrer">Shop Tracker</a></strong></h3>
+        <p><strong>Hoisted: <a href="https://davidcha17.github.io/Store-Tracker/" target="_blank" rel="noreferrer">https://davidcha17.github.io/Store-Tracker/</a></strong></p>
+
+        <div className={style.description} >
+
+          <p>I wanted to build up on my fundamentals on vanilla Javascript. There's no better way to do that other than actually building a 
+          simple shopping to do list. There is no backend, but all the instance data are saved through the local storage from the browser. This is
+          a static website, but it does have user interactions! I have definitely built up my fundamentals on vanilla Javascript and I encountered
+          a few challenges. One of the few challenges that was the most difficult was rendering the switch case between the bought items and the
+          not bought items. When I console.logged the trackerList (DOM-element for ul), I get an empty string even though the trackerList contains
+          a bunch of li items. I knew that the error was coming from the index.html file and after a few readings, I found out that the when the 
+          element "ul|     |ul" are separated from each other, the element produces an empty string. When I was trying to do a forEach method on the
+          trackerList for the child nodes, an empty string would show up and would prevent the anonymous function to change the display of the li with 
+          the values of bought, or !bought. Once I deleted the whitespace in between the element "ul||ul", the switch cases started to work. 
+          </p>
+          <p>I am going to add a few more features into this project, such as a progress bar, a history for the user to have a reference from his/her
+          last trip to the store, and making it into a phone responsive app.</p>
+
+        </div>
+        <div className={style.tools}>
+
+          <p><strong>Tools:</strong></p>
+          <ul>
+            <li><strong>Vanilla Javascript</strong></li>
+            <li><strong>Custom CSS</strong></li>
+          </ul>
+
+        </div>
+
+        <hr className={style.line} />
+
         <h1>Portfolio Site</h1>
-        <img className={style.projectImage} src={Portfolio} alt="scrren shot of portfolio" />
+        <img className={style.projectImage} src={Portfolio} alt="screen shot of portfolio" />
         <h3 className={style.projectLink} ><strong>github: <a href="https://github.com/davidcha17/portfolio" target="_blank" rel="noreferrer">Portfolio</a></strong></h3>
         <p><strong>Hoisted: <a href="https://davidcha.netlify.app/" target="_blank" rel="noreferrer">https://davidcha.netlify.app//</a></strong></p>
 
