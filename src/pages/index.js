@@ -11,7 +11,7 @@ import ProfilePic2 from '../images/profile_picture/pic11.jpeg'
 const Home = () => {
   return (
     <Layout>
-        <div 
+        {/* <div 
           // className={HomeStyle.background}
         style={{
           height: '99vh',
@@ -21,7 +21,7 @@ const Home = () => {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundImage: `url(${withPrefix(ProfilePic2)})`}}
-        >
+        > */}
           <h1  
           style={{
             textAlign: 'center',
@@ -33,7 +33,7 @@ const Home = () => {
           }}
           >
           I want to create material that'll improve daily lives.</h1>
-        </div>
+        {/* </div> */}
     </Layout>
   )
 }

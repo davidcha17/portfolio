@@ -30,12 +30,6 @@ const NavLinks = () => {
                     listStyleType: 'none'
                 }}
                 >
-                    <ol>
-                        <Link to="/" style={{ fontSize: '30px', color: '#196B76'}} >{data.site.siteMetadata.author}</Link>
-                        <p>Full Stack Developer</p>
-                    </ol>
-                    <hr style={{ boxShadow: '1px 2.5px 1px grey' }}
-                    />
                     <li>
                         <Link to="/about" >About</Link>
                     </li>
