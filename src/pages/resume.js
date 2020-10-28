@@ -1,5 +1,5 @@
 import React from "react"
-import ResumePDF from '../images/resume/resume2020Oct.pdf'
+import ResumePDF from '../images/resume/Resume2020Oct.pdf'
 
 import Layout from '../components/layout'
 
